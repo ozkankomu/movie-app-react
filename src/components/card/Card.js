@@ -20,15 +20,17 @@ const Card = ({ data }) => {
           <div key={id} className="card" style={{ width: "22rem" }}>
             <div className="cards">
               <img src={image} className="card-img-top" alt="image" />
-              <p className="card-text">{overview}</p>
+              <div className="cardText">
+                <p className="card-text">{overview}</p>
+              </div>
             </div>
             <div className="card-body">
               <div className="d-flex justify-content-around">
                 <h5 className="card-title">{title}</h5>
-                <p>{vote_average}</p>
+                <p className="vote">{vote_average}</p>
               </div>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
+              <a href="#" className="btn btn-secondary rounded-4">
+                View Details
               </a>
             </div>
           </div>

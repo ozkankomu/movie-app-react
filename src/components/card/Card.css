@@ -1,25 +1,39 @@
 .card-img-top {
   height: 450px;
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 .cards {
   height: 450px;
   border-radius: 20px;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
-
-.card-text {
+.cardText {
   position: absolute;
-  bottom: 5px;
-  transform: ;
+  bottom: 0px;
+  transform: translateY(100%);
+  transition: all ease-in-out 0.4s;
+  background-color: rgba(49, 54, 34, 0.797);
 }
 
-.card-text:hover {
+.cards:hover .cardText {
+  transform: translate(0%);
+}
+.cards:hover .card-img-top {
+  transform: scale(1.3);
 }
 
 .card {
   padding: 10px;
   background-color: #35424a;
   color: white;
+  border-radius: 10px;
+}
+
+.vote {
+  background-color: rgb(211, 149, 34);
+  padding: 5px 10px;
   border-radius: 10px;
 }
