@@ -1,0 +1,25 @@
+.card-img-top {
+  height: 450px;
+  border-radius: 20px;
+}
+.cards {
+  height: 450px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 5px;
+  transform: ;
+}
+
+.card-text:hover {
+}
+
+.card {
+  padding: 10px;
+  background-color: #35424a;
+  color: white;
+  border-radius: 10px;
+}
