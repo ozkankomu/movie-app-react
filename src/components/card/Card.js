@@ -17,7 +17,11 @@ const Card = ({ data }) => {
         } = item;
         const image = `https://image.tmdb.org/t/p/w500${poster_path} `;
         return (
-          <div key={id} className="card" style={{ width: "22rem" }}>
+          <div
+            key={id}
+            className="card"
+            style={{ width: "22rem", background: "#35424a" }}
+          >
             <div className="cards">
               <img src={image} className="card-img-top" alt="image" />
               <div className="cardText">
