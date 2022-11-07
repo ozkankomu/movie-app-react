@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar.js";
-import { Route, Routes } from "react-router-dom";
+import { PrivateRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import About from "./pages/About";
@@ -17,7 +17,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/about" element={<About />} />
-        <Route path="/:id" element={<Detail />} />
+        <Route path="/:id" element={<PrivateRouter />}>
+          <Route path="" element={<Detail />} />
+        </Route>
       </Routes>
       <Footer />
     </>

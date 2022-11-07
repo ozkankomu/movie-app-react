@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { signIn } from "../auth/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    signIn(email, password, navigate);
+  };
+
   return (
     <div
       className="container d-flex justify-content-center align-items-center "
       style={{ height: "80vh" }}
     >
-      <form className="w-50 m-auto">
+      <form className="w-50 m-auto" onSubmit={handleSubmit}>
         <h3 className="mb-4 text-center text-danger">
           Please Fill The Form For Login{" "}
         </h3>
@@ -28,6 +39,7 @@ const Login = () => {
           </label>
           <input
             type="email"
+            onChange={(e) => setEmail(e.target.value)}
             required
             className="form-control"
             placeholder="Please Enter Email"
@@ -44,6 +56,7 @@ const Login = () => {
           </label>
           <input
             type="password"
+            onChange={(e) => setPassword(e.target.value)}
             required
             placeholder="Please Enter Password"
             className="form-control"
