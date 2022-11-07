@@ -8,15 +8,21 @@ const Footer = () => {
   return (
     <footer className="m-0">
       <p>Ozkan Web Design, Copyright &copy; {new Date().getFullYear()}</p>
-      <a href="https://www.linkedin.com/in/ozkankomu/">
-        <LinkedInIcon fontSize="large" color="error" />
-      </a>
-      <a href="https://github.com/ozkankomu">
-        <GitHubIcon fontSize="large" color="error" />
-      </a>
-      <a href="ozkankomu35@gmail.com">
-        <MailIcon fontSize="large" color="error" />
-      </a>
+      <div>
+        <a href="https://www.linkedin.com/in/ozkankomu/" target="_blanked">
+          <LinkedInIcon fontSize="large" color="error" />
+        </a>
+        <a
+          className="p-3"
+          href="https://github.com/ozkankomu"
+          target="_blanked"
+        >
+          <GitHubIcon fontSize="large" color="error" />
+        </a>
+        <a href="https://ozkankomu35@gmail.com" target="_blanked">
+          <MailIcon fontSize="large" color="error" />
+        </a>
+      </div>
     </footer>
   );
 };
