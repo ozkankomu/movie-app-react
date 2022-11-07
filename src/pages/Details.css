@@ -1,0 +1,22 @@
+body {
+  background-color: #98a3a9;
+}
+
+.genres {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  gap: 15px;
+}
+.genres p {
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+
+.detail-body p {
+  border-bottom: 1px solid white;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}

@@ -41,6 +41,7 @@ const Home = () => {
             className="btn btn-outline-secondary fs-5 rounded "
             type="button"
             id="button-addon2"
+            onClick={fetchData}
           >
             Search
           </button>

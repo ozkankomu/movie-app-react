@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <section id="newsletter">
+    <section id="newsletter" className="shadow-lg">
       <div className="container">
         <h1>Subscribe To Our Newsletter</h1>
         <form>
