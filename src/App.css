@@ -27,6 +27,7 @@ ul {
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 210px;
   color: #ffffff;
   cursor: pointer;
 }
