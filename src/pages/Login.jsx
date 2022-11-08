@@ -84,7 +84,7 @@ const Login = () => {
             className="btn btn-danger my-2"
             onClick={handleGeogle}
           >
-            Continue with Geogle
+            Continue with Google
           </button>
 
           <button type="submit" className="btn btn-danger w-100">
