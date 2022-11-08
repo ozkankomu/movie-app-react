@@ -7,7 +7,7 @@ const Card = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="row gap-2 justify-content-between">
+    <div className="row gap-2 justify-content-center">
       {data?.map((item) => {
         const {
           id,

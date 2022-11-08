@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
+import { logOut } from "../../auth/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <header>
       <div className="container">
@@ -26,7 +29,9 @@ const Navbar = () => {
               <Link to="/register">Register</Link>
             </li>
             <li>
-              <Link to="/login">Logout</Link>
+              <span type="button" onClick={() => logOut(navigate)}>
+                LOGOUT
+              </span>
             </li>
           </ul>
         </nav>

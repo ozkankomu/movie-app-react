@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { signIn } from "../auth/firebase";
+import { forgotPassword, signIn, signUpProvider } from "../auth/firebase";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -10,6 +10,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     signIn(email, password, navigate);
+  };
+
+  const handleGeogle = (e) => {
+    e.preventDefault();
+    signUpProvider(navigate);
   };
 
   return (
@@ -63,6 +68,20 @@ const Login = () => {
             id="exampleInputPassword1"
           />
         </div>
+        <span
+          className="link"
+          type="button"
+          onClick={() => forgotPassword(email, navigate)}
+        >
+          Forgot Password?
+        </span>
+        <button
+          type="button"
+          className="btn btn-danger my-2"
+          onClick={handleGeogle}
+        >
+          Continue with Geogle
+        </button>
 
         <button type="submit" className="btn btn-danger w-100">
           Login
