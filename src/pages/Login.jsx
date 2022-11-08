@@ -18,9 +18,13 @@ const Login = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-between align-items-center">
-      <div className="img-fluid d-none d-lg-block">
-        <img src="https://picsum.photos/800/800" alt="image" />
+    <div className="container-fluid d-flex justify-content-between align-items-center bg-secondary">
+      <div className="img-fluid d-none d-lg-block ">
+        <img
+          className="rounded-circle"
+          src="https://picsum.photos/800/800"
+          alt="image"
+        />
       </div>
       <div
         className="container d-flex justify-content-center align-items-center "
@@ -73,7 +77,7 @@ const Login = () => {
             />
           </div>
           <span
-            className="text-primary me-4 "
+            className="text-primary me-4 fs-4"
             type="button"
             onClick={() => forgotPassword(email, navigate)}
           >
@@ -81,7 +85,7 @@ const Login = () => {
           </span>
           <button
             type="button"
-            className="btn btn-danger my-2"
+            className="btn btn-danger my-4"
             onClick={handleGeogle}
           >
             Continue with Google
