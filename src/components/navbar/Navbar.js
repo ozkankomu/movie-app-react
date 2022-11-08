@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className="d-inline">
               {currentUser ? (
                 <>
-                  <h5 className="mb-0 text-white bg-secondary border-radius rounded-4 p-2 text-capitalize d-inline">
+                  <h5 className="mb-0 text-white bg-secondary border-radius rounded-4 p-2 text-capitalize d-block d-md-inline">
                     welcome {currentUser?.displayName}
                   </h5>
                   <li>
