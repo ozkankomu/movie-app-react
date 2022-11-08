@@ -95,12 +95,12 @@ export const signUpProvider = (navigate) => {
     });
 };
 
-export const forgotPassword = (email, navigate) => {
+export const forgotPassword = (email) => {
   //? Email yoluyla şifre sıfırlama için kullanılan firebase metodu
   sendPasswordResetEmail(auth, email)
     .then(() => {
       // Password reset email sent!
-      navigate("/");
+
       toastWarnNotify("Please check your mail box!");
       // alert("Please check your mail box!");
     })

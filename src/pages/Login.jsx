@@ -79,7 +79,7 @@ const Login = () => {
           <span
             className="text-primary me-4 fs-4"
             type="button"
-            onClick={() => forgotPassword(email, navigate)}
+            onClick={() => forgotPassword(email)}
           >
             Forgot Password?
           </span>
