@@ -1,15 +1,25 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
+<p align="center">
+<a href="https://www.linkedin.com/in/ozkankomu/" target="_blank"><img src="photo1.png" alt="screenshot" target=_blanked></a>
+</p>
 
-# Coding Challenge-003 : Clarusway Web Page with React Router
 
-## Description
 
-Project aims to create a Clarusway Web Page with Router.
 
-## Problem Statement
 
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
+Recipe App
+## Table of contents
+
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Project Skeleton ](#project-skeleton)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+  
+  
+## The challenge
+In this project, I have done it with Tailwind before, I made the project with React using Bootstrap and css. I did the authentication (Login and Google login) with firebsae.
 
 ## Project Skeleton
 
@@ -44,44 +54,44 @@ SOLUTION
 └── yarn.lock
 ```
 
-## Expected Outcome
 
-![Project 003 Snapshot](clarusway-web-page-with-router.gif)
+## Screenshot
+<p align="left">
+<a href="https://ozkankomu.github.io/movie-app-react/"><img src="screen.gif" alt="screenshot" target=_blanked></a>
+</p>
 
-## Objective
 
-Build a Clarusway Web Page using ReactJS and react-router.
 
-### At the end of the project, following topics are to be covered;
+## Links
+<hr>
+<b>Check The Live Website ➡️</b> <a href="https://ozkankomu.github.io/movie-app-react/">Live Website</a>
+<hr>
 
-- HTML
-
-- CSS
-
-- JS
-
-- ReactJS
-
-### At the end of the project, students will be able to;
-
-- Improve coding skills within HTML & CSS & JS & ReactJS.
-
-- Use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
-## Steps to Solution
-
-- Step 1: Create React App using `yarn create react-app clarusway-web-page-with-router` or `npx create-react-app clarusway-web-page-with-router`.
-
-- Step 2: Build Clarusway Web Page using ReactJS, react-router and useHistory.
-
-- Step 3: Push your application into your own public repo on Github.
-
-- Step 4: Add project gif to your project and README.md file.
+### Built with
+- Semantic HTML5 markup
+- SCSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Mixins   
+- Variables
 
 ## Notes
 
-- You can add additional functionalities and design to your app.
+- I used React-Styled-Components , 
 
-[starter folder](./starter/)
+### Useful resources
 
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
+- [W3 Schoold](https://www.w3schools.com/) - This helped me for basics of website paradigm. I really liked this pattern and will use it going forward.
+- [MDN](https://developer.mozilla.org/en-US/) - This is an amazing document which helped me finally understand deep sides of web development. I'd recommend it to anyone still learning these concepts.
+
+
+
+
+
+
+## Author
+
+- Author - [Ozkan]
+
+<center> &#8987; Happy Coding  &#9997; </center>
